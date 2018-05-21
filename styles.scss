@@ -1,0 +1,215 @@
+@import 'variables';
+
+
+*{
+    width:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    display:flex;
+    position:relative;
+    width:1280px;
+    height:1024px;
+    background-color:$white-primary-color;
+    margin:100px 400px;
+    overflow:hidden;
+    
+    
+    &__skew-left{
+        display:flex;
+        position:absolute;
+        width:700px;
+        height:1024px;
+        background-color:$dark-primary-color;
+        transform: skew(18deg, 0deg) scale(1.1, 1) translate(-160px);
+        
+    }
+    
+    &__skew-middle{
+        display:flex;
+        position:absolute;
+        width:22px;
+        height:1024px;
+        background-color:$accent-color;
+        transform: skew(18deg, 0deg) scale(1.56, 1) translate(352px);
+    }
+    
+    &__login{
+        display:flex;
+        position:relative;
+        width:680px;
+        height:540px;
+        background-image:url(elementos/trama2.png);
+        background-size: 130%;
+        background-position:center center;
+        margin:242px 0px 262px 80px;
+        
+        &_logo{
+            display:flex;
+            position:absolute;
+            width:229px;
+            height:45px;
+            margin:40px 0px 262px 50px;
+        }
+        
+        &_rueda{
+            display:flex;
+            position:absolute;
+            width:127px;
+            height:127px;
+            margin:-65px 0px 0px 595px;
+            z-index: 1;
+        }
+        
+        &_billete{
+            display:flex;
+            position:absolute;
+            width:161px;
+            height:184px;
+            margin:405px 0px 262px -30px;
+            
+        }
+    }
+    
+    &__forma{
+        margin:135px 0px 135px 105px;
+        width:460px;
+        height:500px;
+        font-family: 'Open Sans', sans-serif;
+            
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 20px 0px;
+        margin: 10px 0;
+        border-top-style:none;
+        border-right-style:none;
+        border-left-style:none;
+        border-bottom:1px solid #EA5627;
+        box-sizing: border-box;
+        font-size:19px;
+        background-color:transparent;
+        border-width:2px;
+        &::placeholder{color:black;}
+        
+        
+        }
+    
+        button {
+        background-color: #EA5627;
+        color: $white-primary-color;
+        padding: auto 30px;
+        margin: 45px 340px;
+        border: none;
+        cursor: pointer;
+        width: 120px;
+        height:38px;
+        font-size:14px;
+        font-weight:700;
+        border-radius:35px;
+        }
+    
+        button:hover {opacity: 0.8;}
+        
+        &-psw{
+    	display:flex;
+        position:relative;
+        margin: -70px 0px 0px 188px;
+        font-size:12px;
+        width:40%;
+        
+        }
+        
+        &-cuentaNueva1{
+        display:flex;
+        position:relative;
+        margin: 128px 0px 0px 112px;
+        font-size:11px;
+        width:200px;
+        }
+        
+        
+        
+        &-cuentaNueva2{
+        display:flex;
+        margin: -16px 0px 0px 272px;
+        font-size:11px;
+        width:100px;  
+        color:$dark-primary-color;
+        cursor:pointer;
+        }
+        
+        a:link{text-decoration:none;}
+    }
+    
+    &__bienvenida{
+        display:flex;
+        position:absolute;
+        width:460px;
+        height:660px;
+        background-color:$primary-color;
+        margin:180px 60px 212px 760px;
+        
+        &-encabezado{
+            display:flex;
+            position:relative;
+            flex-direction:column;
+            
+            h1{
+                width:400px;
+                height:40px;
+                margin:130px 0px 0px 25px;
+                font-size:45px;
+                font-weight:300;
+                color:$white-primary-color;
+                font-family: 'Raleway', sans-serif;
+            }
+            
+            h2{
+                width:460px;
+                height:20px;
+                margin:10px 0px 0px 25px;
+                font-size:31px;
+                font-weight:700;
+                color:$white-primary-color;
+                font-family: 'News Cycle', sans-serif;
+            }
+            
+            p{
+                width:400px;
+                height:50px;
+                margin:50px 0px 10px 25px;
+                font-size:24px;
+                font-weight:100;
+                color:$white-primary-color;
+                font-family: 'Dosis', sans-serif;
+                line-height:1.2;
+                
+            }
+        }
+        
+        &_logoPig{
+            display:flex;
+            position:relative;
+            margin-left:45px;
+            margin-right:auto;
+            margin-bottom:65px;
+            width:339px;
+            height:224px;
+            align-self:flex-end;
+            
+        }
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+

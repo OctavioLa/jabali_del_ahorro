@@ -1,0 +1,92 @@
+<!--                                 WEB JABALI DEL AHORRO 2                                   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="registro.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis|News+Cycle:700|Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>REGISTRO</title>
+    
+</head>w
+<body>
+
+    <div class="contenedor">
+        <div class="contenedor__skew-left"></div>
+        <div class="contenedor__skew-middle"></div>
+            <img class="contenedor__logo" src="elementos/logo_kodevian_wb.png" alt="Logo Kodevian">
+        <div class="contenedor__registro">
+
+            <form action="/action_page.php">
+                <div class="contenedor__forma">
+                    <input type="text" placeholder="Nombre" name="uname" required>
+                    <input type="text" placeholder="Apellidos" name="uname" required>
+                    <input type="text" placeholder="Cargo" name="uname" required>
+                    <input type="text" placeholder="Celular" name="uname" required>
+                    
+                    <div class="contenedor__forma-cuenta">
+                        <div class="contenedor__forma-cuenta--numero">
+                            <input type="text" placeholder="Número de cuenta" name="uname" required>
+                        </div>
+                    
+                        <div class="contenedor__forma-cuenta--cci">
+                            <input type="text" placeholder="CCI" name="uname" required>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Usuario" name="uname" required>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+                    <button type="submit">ENVIAR</button>
+                    
+                     <div class="contenedor__forma-terminos"> 
+                     <input type="checkbox" checked="checked">
+                     <span class="contenedor__forma-terminos--checkmark"></span>
+                     </div>
+                     <div>
+                        <span class="contenedor__forma-terminos--label">Acepto los</span> 
+                     </div>
+                     
+                    <a href="#"><div class="contenedor__forma-terminos2">Términos y condiciones</div></a>
+                </div>
+            </form>
+            
+            
+            <div class="contenedor__listado">
+                <label>
+                    <select>
+                        <option selected>Interbank</option>
+                        <option>BCP</option>
+                        <option>BBVA Continental</option>
+                        <option>Banco Azteca</option>
+                        <option>Banbif</option>
+                        <option>Scotiabank</option>
+                        <option>Banco de la Nación</option>
+                        <option>Banco de Comercio</option>
+                        <option>Mi Banco</option>
+                        <option>Citibank Perú</option>
+                    </select>
+                </label>
+            </div>
+                        
+        </div>
+        
+        <div class="contenedor__bienvenida">
+            <div class="contenedor__bienvenida-encabezado">
+                <h1>Hola Vikingo,</h1>
+                <h2>Bienvenido al Jabalí del ahorro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipis. 
+                Lorem ipsum dolor sit amet, consectetuer adipis. 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                set diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, 
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+                aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <img class="contenedor__bienvenida_billete" src="elementos/logo_billete.png" alt="Billete">
+        </div>
+    </div>
+</body>
+</html>

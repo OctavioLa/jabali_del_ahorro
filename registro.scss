@@ -1,0 +1,292 @@
+@import 'variables';
+
+
+*{
+    width:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+}
+
+.contenedor{
+    display:flex;
+    position:relative;
+    width:1280px;
+    height:1024px;
+    background-color:$white-primary-color;
+    margin:100px 400px;
+    overflow:hidden;
+    
+    
+    &__skew-left{
+        display:flex;
+        position:absolute;
+        width:700px;
+        height:1024px;
+        background-color:$dark-primary-color;
+        transform: skew(18deg, 0deg) scale(1.1, 1) translate(-135px);
+        
+    }
+    
+    &__logo{
+            display:flex;
+            position:absolute;
+            width:286px;
+            height:56px;
+            margin:45px 0px 0px 70px;
+        }
+    
+    &__registro{
+        display:flex;
+        position:relative;
+        width:840px;
+        height:730px;
+        background-image:url(elementos/trama2.png);
+        background-size: 120%;
+        background-position:center center;
+        margin:150px 0px 0px 52px;
+        
+
+    }
+    
+    
+    
+    &__forma{
+        margin:24px 0px 135px 85px;
+        width:460px;
+        height:500px;
+        font-family: 'Open Sans', sans-serif;
+            
+        input[type=text], input[type=password] {
+        width:100%;
+        padding: 20px 0px 16px 0px;
+        margin: 18px 30px 0px 0px;
+        border-top-style:none;
+        border-right-style:none;
+        border-left-style:none;
+        border-bottom:1px solid #EA5627;
+        box-sizing: border-box;
+        font-size:19px;
+        background-color:transparent;
+        border-width:2px;
+        &::placeholder{
+            color:black;}
+        
+         
+        }
+        &-cuenta{
+            display: table;
+            
+         &--numero{
+            float:left;
+            width:48%;
+            margin-right:6%;
+             
+            }
+         
+         &--cci{
+            float:left;
+            width:46%;
+            margin-right:0%;
+             
+            }
+         
+        } 
+        
+        &-terminos{
+            
+            /*para esconder el checkbox por default*/
+            input {
+            position: relative;
+            opacity: 0;
+            cursor: pointer;
+            }
+            
+            /*para crear mi checkbox*/
+            &--checkmark{
+            position: absolute;
+            margin-top:-105px;
+            margin-left: 10px;
+            height: 14px;
+            width: 14px;
+            
+            border-radius:2px;
+            border:solid $check-border;
+            border-width:2px;
+            
+            }
+         
+
+            /*cambia de color cuando coloco el mouse encima*/
+            &:hover input ~ &--checkmark {
+            background-color: $dark-primary-color;
+            }
+            
+            /*
+            agrega color de fondo cuando es clickeado
+            & input:checked ~ &--checkmark {
+                background-color: red;
+            }
+            
+            crea el indicador del checkmark que se oculta cuando no es clickeado
+            &--checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            
+            muestra el checkmark cuando es clickeado
+            & input:checked ~ &--checkmark:after {
+                display: block;
+            }
+            
+             */
+            
+            &--label{
+                position: absolute;
+                margin-top:-105px;
+                margin-left: 35px;
+                width:100px;
+                font-size:10px;
+            }
+        
+            
+        }
+        
+        &-terminos2{
+            display:flex;
+            margin: -105px 0px 0px 85px;
+            font-size:10px;
+            width:150px;  
+            color:$primary-color;
+            cursor:pointer;
+            }
+            a:link{text-decoration:none;}
+            
+        button {
+            background-color: #EA5627;
+            color: $white-primary-color;
+            padding: auto 30px;
+            margin: 60px 460px;
+            border: none;
+            cursor: pointer;
+            width: 120px;
+            height:38px;
+            font-size:14px;
+            font-weight:700;
+            border-radius:35px;
+        }
+    
+        button:hover {opacity: 0.8;}    
+    }
+    
+    &__listado{
+            position:relative;
+            float:left;
+            margin:373px 0px 0px 600px;
+            width:200px;
+            height:40px; 
+            font-size:15px;
+            border-color:$dark-primary-color;
+            
+            select{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    display: block;
+                    width: 200px;
+                    height: 35px;
+                    float: right;
+                    margin: 5px 0px;
+                    padding: 0px 0px 0px 40px;
+                    font-size: 16px;
+                    line-height: 1.75;
+                    color: #333;
+                    background-color: $no-background;
+                    border: 2px solid #EA5627;
+                    border-radius:6px;
+            }
+            }
+            
+    &__listado:after{
+        content: '\f107';
+    font: normal normal normal 25px/1 FontAwesome;
+    color: #FFFFFF;
+    background-color:#EA5627;
+    left: 0px;
+    top: 5px;
+    width:25px;
+    height: 25px;
+    padding: 5px 0px 5px 10px;
+    border-left: 1px solid #EA5627;
+    position: absolute;
+    pointer-events: none;
+    border-radius:6px;
+        
+    }
+
+    
+    &__bienvenida{
+        display:flex;
+        position:absolute;
+        width:330px;
+        height:820px;
+        background-color:$primary-color;
+        margin:105px 60px 212px 892px;
+        
+        &-encabezado{
+            display:flex;
+            position:relative;
+            flex-direction:column;
+            
+            h1{
+                width:400px;
+                margin:70px 0px 0px 30px;
+                font-size:40px;
+                font-weight:300;
+                color:$white-primary-color;
+                font-family: 'Raleway', sans-serif;
+            }
+            
+            h2{
+                width:210px;
+                
+                margin:5px 0px 0px 30px;
+                font-size:28px;
+                font-weight:700;
+                color:$white-primary-color;
+                font-family: 'News Cycle', sans-serif;
+                line-height:1.4;
+            }
+            
+            p{
+                width:260px;
+                
+                margin:45px 0px 10px 30px;
+                font-size:21px;
+                font-weight:100;
+                color:$white-primary-color;
+                font-family: 'Dosis', sans-serif;
+                line-height:1.2;
+                
+            }
+        }
+
+        &_billete{
+            display:flex;
+            position:absolute;
+            width:161px;
+            height:184px;
+            margin:675px 0px 0px -65px;
+        }
+    
+    }
+}
+
+
+
+
+

@@ -1,0 +1,5 @@
+'Para las transformaciones:
+https://www.css3maker.com/css3-transform.html
+
+'Para cortar un lado de la imagen en CSS
+http://bennettfeely.com/clippy/

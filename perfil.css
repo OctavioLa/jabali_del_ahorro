@@ -1,0 +1,223 @@
+* {
+  width: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(elementos/trama2.png);
+  background-size: 115%;
+  background-position: center center;
+  overflow: hidden; }
+  .container__transparency {
+    display: flex;
+    position: relative;
+    width: 16%;
+    height: 36%;
+    background-color: #EA5627;
+    opacity: 0.55;
+    transform: skew(-18deg, 0deg) scale(1.1, 1) translate(-60px); }
+  .container__picture {
+    display: flex;
+    position: relative;
+    width: 18.5%;
+    height: 36%;
+    overflow: hidden;
+    margin: 0px 0px 0px -340px;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 95% 0%, 61% 92%, 0 95%);
+    clip-path: polygon(0 0, 92% 0%, 61% 95%, 0 95%); }
+  .container__logorichpig2 {
+    width: 194px;
+    height: 148px;
+    margin: 50px 0px 0px 60px; }
+  .container__bienvenida {
+    display: flex;
+    position: relative;
+    width: 20%;
+    height: 15%;
+    margin: 70px 20px 0px 780px;
+    flex-direction: column; }
+    .container__bienvenida h1 {
+      color: #EA5627;
+      font-family: 'Raleway', sans-serif;
+      width: 100%;
+      font-size: 40px;
+      text-align: right; }
+    .container__bienvenida h2 {
+      color: #615f5f;
+      font-family: 'News Cycle', sans-serif;
+      width: 100%;
+      font-size: 32px;
+      margin-top: -5px;
+      margin-left: 12px;
+      text-align: left; }
+  .container__saldo {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 280px 0px 0px 430px;
+    flex-direction: column; }
+    .container__saldo h3 {
+      color: #615f5f;
+      font-family: 'News Cycle', sans-serif;
+      width: 100%;
+      font-size: 22px; }
+    .container__saldo-coins {
+      background-color: #2433d9;
+      width: 240px;
+      height: 140px;
+      border-radius: 10px; }
+      .container__saldo-coins-monto {
+        width: 100%;
+        font-size: 60px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0px auto;
+        font-family: 'News Cycle', sans-serif; }
+      .container__saldo-coins-moneda {
+        width: 100%;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal; }
+  .container__envio {
+    display: flex;
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    margin: 300px 0px 0px 780px;
+    flex-direction: column; }
+    .container__envio-pregunta {
+      width: 100%;
+      font-size: 28px;
+      font-family: .container__envio-pregunta perfil-text-font;
+      color: #615f5f;
+      margin-left: 12px; }
+    .container__envio button {
+      background-color: #EA5627;
+      color: #FFFFFF;
+      padding: auto 30px;
+      margin: 35px 12px;
+      border: none;
+      cursor: pointer;
+      width: 175px;
+      height: 38px;
+      font-size: 22px;
+      font-weight: 700;
+      border-radius: 12px; }
+    .container__envio button:hover {
+      opacity: 0.8; }
+  .container__actividad {
+    position: absolute;
+    width: 570px;
+    height: 600px;
+    margin: 550px 0px 20px 110px;
+    flex-direction: column; }
+    .container__actividad-titulo {
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: .container__actividad-titulo perfil-text-font;
+      color: #615f5f;
+      margin-left: 12px; }
+    .container__actividad-listado {
+      width: 100%;
+      height: 350px;
+      background-color: #FFFFFF;
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-bottom: 15px;
+      margin-top: 20px;
+      border-color: #FFFFFF;
+      border-radius: 10px; }
+      .container__actividad-listado--green {
+        display: flex;
+        width: 97%;
+        height: 25px;
+        background-color: #009933;
+        color: #FFFFFF;
+        padding-left: 12px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        align-items: center;
+        font-family: 'News Cycle', sans-serif;
+        font-weight: 100; }
+      .container__actividad-listado--brown {
+        display: flex;
+        width: 97%;
+        height: 25px;
+        background-color: #993300;
+        color: #FFFFFF;
+        padding-left: 12px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        align-items: center;
+        font-family: 'News Cycle', sans-serif; }
+    .container__actividad-scroll {
+      width: 100%;
+      height: 350px;
+      overflow-y: scroll;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .container__actividad-scroll::-webkit-scrollbar {
+        width: 18px; }
+      .container__actividad-scroll::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #f1f1f1;
+        border-radius: 15px;
+        width: 20px; }
+      .container__actividad-scroll::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 15px;
+        border: 6px solid #FFFFFF; }
+      .container__actividad-scroll::-webkit-scrollbar-thumb:hover {
+        background: #888; }
+  .container__opciones {
+    position: absolute;
+    width: 380px;
+    height: 600px;
+    margin: 550px 0px 20px 780px;
+    flex-direction: column; }
+    .container__opciones-titulo {
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: .container__opciones-titulo perfil-text-font;
+      color: #615f5f; }
+    .container__opciones-button {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 25px; }
+      .container__opciones-button button {
+        background-color: #EA5627;
+        color: #FFFFFF;
+        padding: auto 0px;
+        margin: 8px 0px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 38px;
+        font-size: 22px;
+        font-weight: 100;
+        border-radius: 12px; }
+      .container__opciones-button button:hover {
+        opacity: 0.8; }
+
+/*# sourceMappingURL=perfil.css.map */

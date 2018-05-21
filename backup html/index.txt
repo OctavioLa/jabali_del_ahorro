@@ -1,0 +1,52 @@
+<!--                                 WEB JABALI DEL AHORRO 1                                   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis|News+Cycle:700|Open+Sans|Raleway" rel="stylesheet">
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="contenedor__skew-left"></div>
+        <div class="contenedor__skew-middle"></div>
+        <div class="contenedor__login">
+            <img class="contenedor__login_logo" src="elementos/logo_kodevian.png" alt="Logo Kodevian">
+            <img class="contenedor__login_rueda" src="elementos/logo_rueda.png" alt="Logo Rueda">
+            <img class="contenedor__login_billete" src="elementos/logo_billete.png" alt="Logo Billete">
+            <form action="/action_page.php">
+                
+                <div class="contenedor__forma">
+                    <input type="text" placeholder="Usuario" name="uname" required>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+            
+                    <button type="submit">ENTRAR</button>
+    
+                    <div class="contenedor__forma-psw">Me olvidé la contraseña </div>
+                    <div class="contenedor__forma-cuentaNueva1">Si no te has creado una cuenta</div>
+                    <a href="registro.html"><div class="contenedor__forma-cuentaNueva2">create una ahora</div></a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="contenedor__bienvenida">
+            <div class="contenedor__bienvenida-encabezado">
+                <h1>Hola Vikingo,</h1>
+                <h2>Bienvenido al Jabalí del ahorro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipis.
+                Lorem ipsum dolor sit amet, consectetuer adipis.</p>
+            </div>
+            <img class="contenedor__bienvenida_logoPig" src="elementos/logo_rich_pig.png" alt="Rich Pig">
+        </div>
+            
+            
+    </div>
+
+    
+</body>
+</html>
